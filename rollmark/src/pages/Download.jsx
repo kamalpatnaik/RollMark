@@ -1,8 +1,9 @@
 import React from 'react'
+import DownloadCard from '../components/DownloadCard'
 
 const Download = () => {
   return (
-    <div>Download</div>
+    <DownloadCard/>
   )
 }
 

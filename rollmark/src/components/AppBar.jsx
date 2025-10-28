@@ -12,7 +12,7 @@ const AppBar = ({ sideBarOpen, setSideBarOpen }) => {
   ]
 
   return (
-    <header className="w-full flex items-center justify-between px-6 py-4 bg-white shadow-md sticky top-0 z-50">
+    <header className="fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 bg-white shadow-md z-50">
       {/* Left: Mobile Menu Button */}
       <div className="flex items-center md:hidden">
         <button
@@ -23,7 +23,7 @@ const AppBar = ({ sideBarOpen, setSideBarOpen }) => {
         </button>
       </div>
 
-      {/* Left (desktop): Menu */}
+      {/* Center: Menu (Desktop) */}
       <nav className="hidden md:flex items-center gap-14 text-lg font-semibold text-gray-700">
         {menuItems.map((item) => (
           <Link
